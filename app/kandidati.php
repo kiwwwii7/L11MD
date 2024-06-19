@@ -19,16 +19,16 @@ $candidate_count = $_POST['candidate_count'];
             <fieldset>
                 <legend>Kandidats <?= $i; ?></legend>
                 <label for="candidate_name<?= $i; ?>">Vards:</label>
-                <input type="text" id="candidate_name<?= $i ?>" name="candidate_name<?= $i ?>" required><br><br>
+                <input type="text" id="candidate_name<?= $i ?>" name="candidate_name<?= $i ?>" ><br><br>
 
                 <label for="candidate_surname<?= $i; ?>">Uzvards:</label>
-                <input type="text" id="candidate_surname<?= $i ?>" name="candidate_surname<?= $i ?>" required><br><br>
+                <input type="text" id="candidate_surname<?= $i ?>" name="candidate_surname<?= $i ?>" ><br><br>
 
-                <input type="radio" name="vote<?= $i ?>" id="par<?= $i ?>" value="par" required>
+                <input type="radio" name="vote<?= $i ?>" id="par<?= $i ?>" value="par" >
                 <label for="par<?= $i ?>">Par</label>
-                <input type="radio" name="vote<?= $i ?>" id="pret<?= $i ?>" value="pret" required>
+                <input type="radio" name="vote<?= $i ?>" id="pret<?= $i ?>" value="pret" >
                 <label for="pret<?= $i ?>">Pret</label>
-                <input type="radio" name="vote<?= $i ?>" id="Atturos<?= $i ?>" value="Atturos" required>
+                <input type="radio" name="vote<?= $i ?>" id="Atturos<?= $i ?>" value="Atturos" >
                 <label for="Atturos<?= $i ?>">Atturos</label>
             </fieldset>
         <?php } ?>
